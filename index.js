@@ -135,6 +135,7 @@ LocationForecast.prototype = {
         const parent = self.times[node.to];
 
         parent.icon = node.location.symbol.id;
+        parent.symbolNumber = node.location.symbol.number;
         parent.rain = node.location.precipitation.value + ' ' + node.location.precipitation.unit;
 
         parent.rainDetails = {
